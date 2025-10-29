@@ -23,7 +23,7 @@ from bson import ObjectId
 app = FastAPI()
 client = MongoClient("mongodb+srv://anna_db_user:6zxpOoyMUqnpxrBS@similaritysearch.xblvd4g.mongodb.net/")
 db = client["similaritysearch"]
-model = SentenceTransformer("sentence-transformers/clip-ViT-B-16")
+model = SentenceTransformer("sentence-transformers/clip-ViT-Lite-32")
 
 @app.post("/generate_embedding")
 def generate_embedding(data: dict):

@@ -5,6 +5,3 @@ pillow
 numpy
 sentence-transformers
 requests
-torch==2.5.1+cpu
--f https://download.pytorch.org/whl/cpu
-

@@ -14,7 +14,7 @@ from bson import ObjectId
 app = FastAPI()
 client = MongoClient("mongodb+srv://anna_db_user:6zxpOoyMUqnpxrBS@similaritysearch.xblvd4g.mongodb.net/")
 db = client["similaritysearch"]
-model = SentenceTransformer("openai/clip-vit-base-patch32")
+model = SentenceTransformer("sentence-transformers/all-MiniCLIP-L6-v2")
 
 @app.post("/generate_embedding")
 def generate_embedding(data: dict):

@@ -1,1 +1,9 @@
-fastapiuvicornpymongopillownumpysentence-transformersrequests
+fastapi
+uvicorn
+pymongo
+pillow
+numpy
+sentence-transformers
+requests
+torch==2.2.2+cpu
+-f https://download.pytorch.org/whl/torch_stable.html
